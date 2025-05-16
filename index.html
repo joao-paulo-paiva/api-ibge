@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Região, Estado e Cidade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-md w-full">
+    <h1 class="text-2xl font-bold mb-6 text-center text-blue-700">Filtrar por Região</h1>
+    
+    <!-- Nova seleção de região -->
+    <div class="mb-4">
+      <label for="regiao" class="block mb-2 font-semibold">Região</label>
+      <select id="regiao" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
+        <option value="">Selecione a região</option>
+        <option value="Norte">Norte</option>
+        <option value="Nordeste">Nordeste</option>
+        <option value="Sul">Sul</option>
+        <option value="Sudeste">Sudeste</option>
+        <option value="Centro-Oeste">Centro-Oeste</option>
+      </select>
+    </div>
+
+    <div class="mb-4">
+      <label for="estado" class="block mb-2 font-semibold">Estado</label>
+      <select id="estado" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" disabled></select>
+    </div>
+
+    <div class="mb-4">
+      <label for="cidade" class="block mb-2 font-semibold">Cidade</label>
+      <select id="cidade" class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-400" disabled></select>
+    </div>
+
+    <div id="resultado" class="mt-6 text-center text-lg text-green-700"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
